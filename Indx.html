@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <meta name="theme-color" content="#001C30" />
+    <meta name="viewport" content="width=1024"/>
+     <title>Samvaad</title>
+    <link rel="stylesheet" href="Style.css" type="text/css" media="all" />
+    <link rel="icon" type="image/x-icon" href="/Media/S2.png"/>
+    </head>
+    <body>
+            <div class="loader" id="loader">
+  <img  src="Media/loader.gif" alt="" />
+      </div>
+      <div class="contents" id="contents">
+        
+
+      <nav>
+        <div class="logo-div">
+      <img class="logo" src="Media/S2.png" alt="" />
+        </div>
+        
+        <div class="nav-options">
+<button type="submit">Pages</button>
+<button onclick="window.location.href='index.html';" type="submit">Info</button>
+<button onclick="window.location.href='Contact.html';" type="submit">Contact</button>
+        </div>
+        
+        <div class="register-login">
+<button class="log-btn" onclick="window.location.href='S_login.php';" type="submit">Login</button>
+<button class="reg-btn" onclick="window.location.href='S_signup.php';" type="submit">Register</button>
+        </div>
+      </nav>
+
+      
+      <div class="heading">
+<img src="Media/rm3.png" alt="" />
+      <p class="heading2 typed-out">Unleash the potential of tomorrow's communication today.</p>
+      <button class="explore" type="submit" id="explore" onclick="myFunction()">Learn More</button>
+      </div>
+
+      <div class="div" id="div">
+     <h1>gshshsjsjsnjsjs</h1>
+      </div>
+      
+      
+      <video autoplay="true" muted="true" loop >
+  <source src="/Media/banner.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+      </div>
+      </body>
+      <script type="text/javascript" charset="utf-8">
+function myFunction() {
+  const element = document.getElementById("div");
+  element.scrollIntoView();
+}
+//function disableScroll() {
+       // Get the current page scroll position in the vertical direction
+    //  scrollTop =
+        //  window.pageYOffset || document.documentElement.scrollTop;
+           
+           
+ // Get the current page scroll position in the horizontal direction 
+ 
+  //  scrollLeft =
+    //  window.pageXOffset || document.documentElement.scrollLeft;
+      
+      
+     // if any scroll is attempted,
+    // set this to the previous value
+   // window.onscroll = function() {
+  //   window.scrollTo(scrollLeft, scrollTop);
+  //  };
+  // } 
+
+if (document.readyState==='complete') {
+  // The page is fully loaded 
+  let loaded=true;
+}
+else{
+  let loaded=false;
+}
+let loaded=true;
+alert($loaded);
+
+
+//document.onreadystatechange = function () {
+  //var state = document.readyState
+  //if (state == 'interactive') {
+   //    document.getElementById('contents').style.visibility="hidden";
+ // } else if (state == 'complete') {
+ //     setTimeout(function(){
+   //      document.getElementById('interactive');
+    //     document.getElementById('loader').style.visibility="hidden";
+   //      document.getElementById('contents').style.visibility="visible";
+  //    },1000);
+ // }
+//} 
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("#loader").style.visibility = "visible";
+    } else {
+        document.querySelector("#loader").style.display = "none";
+        document.querySelector("body").style.visibility = "visible";
+    }
+};
+//setInterval(disableScroll, 1000);
+      </script>
+      </html>
