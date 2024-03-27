@@ -2,6 +2,9 @@
 * {
   font-family: 'Orbitron', sans-serif;
 }
+body{
+  visibility: visible;
+}
 input[type=file] {
   width: 350px;
   max-width: 100%;
@@ -269,6 +272,10 @@ h1 {
   border-radius: 10px;
   margin-top: 20px;
 }
+#contents{
+  visibility: visible;
+}
+
 .loader {
   background-color: black;
   z-index: 100;
@@ -826,6 +833,10 @@ border-radius: 20px;
   100%{
     transform: scale(1);
   }
+}
+.kolkata{
+  position: absolute;
+  background-color: red;
 }
 .banner{
   position: relative;
